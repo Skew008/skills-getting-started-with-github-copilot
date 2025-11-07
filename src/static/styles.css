@@ -101,14 +101,35 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  margin: 0 0 0 18px;
+  list-style: none;
+  margin: 0;
   padding: 8px 12px;
   background: linear-gradient(180deg, rgba(26,35,126,0.03), rgba(0,0,0,0));
   border-radius: 6px;
   max-height: 140px;
   overflow: auto;
   font-size: 14px;
+}
+
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #c62828;
+  opacity: 0.7;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+  background-color: rgba(198, 40, 40, 0.1);
 }
 
 .participants-list li {
